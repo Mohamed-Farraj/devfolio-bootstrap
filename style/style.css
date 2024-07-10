@@ -1,0 +1,67 @@
+html,
+body{
+    min-height: 100vh;
+}
+header{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../media/hero-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+nav{
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+header h1{font-size: 4rem;}
+a{
+    color: inherit !important;
+}
+.typed-cursor{
+    font-size: 3rem;
+    color:white;
+}
+#about .desc h2{width:fit-content}
+#about .desc h2::after,.section-title::after{
+content:"";
+position: absolute;
+width: 50%;
+height: 2px;
+bottom:0;
+left: 25%;
+background-color: blue;
+}
+
+.icon
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid blue 10px;
+    padding: 50px;
+    transition: all .5s;
+
+}
+#service .card:hover .icon{
+background-color: blue;
+color :white;
+border: solid rgb(108, 123, 255) 10px;
+transition: all .5s;
+
+}
+.icon i{
+    font-size: 3rem;
+}
+.statistics
+{
+    background-image:linear-gradient(to bottom, rgba(83, 121, 255, 0.5), rgb(99, 99, 255)), url("../media/counters-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.statistics .card{
+    background-color: transparent;
+    border: none;
+    color:white;
+}

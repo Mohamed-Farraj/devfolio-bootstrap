@@ -1,25 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
+    <nav class="navbar position-fixed w-100 navbar-expand-lg bg-black">
+      <div class="container">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand text-light" href="#">DevFolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul
+              class="text-white navbar-nav w-50 d-flex justify-content-between align-items-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
 
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-  <script src="script/script.js"></script>
+    <header class="d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="mb-5 text-light">I am Morgan Freeman</h1>
+        <span id="typed" class="text-light h1"></span>
+      </div>
+    </header>
+
+    <section
+      id="about"
+      class="d-flex align-items-center py-5 bg-secondary-subtle"
+    >
+      <div class="container bg-light p-5">
+        <div class="row g-0">
+          <div class="col-sm-12 col-md-6">
+            <div class="row g-0 p-3">
+              <div class="col-sm-12 col-md-6 img mb-3">
+                <img
+                  class="w-50 rounded-2"
+                  src="media/testimonial-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-12 col-md-6 details">
+                <ul
+                  class="lead list-unstyled h-100 flex-column d-flex justify-content-between"
+                >
+                  <li>
+                    <span class="fw-bold">Name: </span
+                    ><span>Morgan Freeman</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Profile: </span
+                    ><span>full stack developer</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Email: </span
+                    ><span>contact@example.com</span>
+                  </li>
+                  <li>
+                    <span class="fw-bold">Phone: </span
+                    ><span>(617) 557-0089</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="stat p-3">
+              <h3>skills</h3>
+
+              <span class="lead d-block mt-3">HTML 85%</span>
+              <div
+                class="progress rounded-0"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+
+              <span class="lead d-block mt-3">CSS3 75%</span>
+              <div
+                class="progress rounded-0"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+              <span class="lead d-block mt-3">PHP 50%</span>
+              <div
+                class="progress rounded-0"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 50%"></div>
+              </div>
+              <span class="lead d-block mt-3">JavaScript 90%</span>
+              <div
+                class="progress rounded-0"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 desc">
+            <h2 class="position-relative pb-2">About Me</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              diam in ipsum molestie convallis. Donec sed dolor id velit
+              convallis semper. Integer vel lacus in libero consectetur congue.
+              Donec sagittis, dolor vel ultricies consectetur, mauris ipsum
+              convallis velit, non fringilla nisi arcu ut nulla.
+            </p>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              diam in ipsum molestie convallis. Donec sed dolor id velit
+              convallis semper. Integer vel lacus in libero consectetur congue.
+              Donec sagittis, dolor vel ultricies consectetur, mauris ipsum
+              convallis velit, non fringilla nisi arcu ut
+            </p>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              diam in ipsum molestie convallis. Donec sed dolor id velit
+              convallis semper. Integer vel lacus in libero consectetur congue.
+              Donec sagittis, dolor vel ultricies consectetur,
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="py-5 bg-secondary-subtle">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="section-title position-relative p-4 text-center">
+          <h2 class="h1 text-uppercase fw-bolder">Services</h2>
+          <span class="lead"
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="cards mt-5">
+          <div class="row g-4">
+            <div class="text-center col-md-6 col-lg-4">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">Web Design</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-4">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-address-card"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">Web Design</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-4">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">Web Design</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-4">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-binoculars"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">Web Design</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-4">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-regular fa-sun"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">Web Design</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-4">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">Web Design</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics py-5">
+      <div class="container">
+        <div class="cards mt-5">
+          <div class="row g-4">
+            <div class="text-center col-md-6 col-lg-3">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                  style="border-color: aliceblue;"
+                >
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">420</h5>
+                  WORKS COMPLETED
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-3">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                  style="border-color: aliceblue;"
+
+                >
+                  <i class="fa-solid fa-address-card"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">22</h5>
+                  <p class="card-text">
+                    YEARS OF EXPERIENCE
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-3">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                  style="border-color: aliceblue;"
+
+                >
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">550</h5>
+                  <p class="card-text">
+                    TOTAL CLIENTS
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center col-md-6 col-lg-3">
+              <div class="card w-100 p-4">
+                <div
+                  class="icon m-auto d-flex justify-content-center align-items-center"
+                  style="border-color: aliceblue;"
+
+                >
+                  <i class="fa-solid fa-binoculars"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title h2">48</h5>
+                  <p class="card-text">
+                    AWARD WON
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
