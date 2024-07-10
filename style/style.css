@@ -60,8 +60,48 @@ transition: all .5s;
     background-size: cover;
     background-attachment: fixed;
 }
+#testomonial,.bbbggg
+{
+    background-image:linear-gradient(to bottom, rgba(83, 121, 255, 0.5), rgb(99, 99, 255)), url("../media/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .statistics .card{
     background-color: transparent;
     border: none;
     color:white;
+}
+#portfolio .card:hover img{
+    scale: 1.2;
+    transition: all .5s;
+}
+
+.card-body{
+    z-index: 11;
+}
+.card-image{
+    overflow: hidden;
+}
+img
+{
+    transition: all .5s;
+
+}
+
+
+.slider-image{
+    width: 80px;
+
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #242424 !important;
+    border-radius: 50% !important;
+}
+.carousel-indicators button.active{
+    width:10px !important;
+    height: 10px !important;
+    background-color: #000000 !important;
 }
